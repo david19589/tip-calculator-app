@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box-logo">
+        <img class="logo" src="assets/images/logo.svg" alt="logo">
+    </div>
+    <div class="container">
+        <div class="box-1">
+            <h1 class="bill">Bill</h1>
+            <div class="box-1-2">
+                <img class="dollar-img" src="assets/images/icon-dollar.svg" alt="dollar-img">
+                <input id="money_amount" dir="rtl" placeholder="0" minlength="0" maxlength="5"/>
+            </div>
+        </div>
+        <div class="box-2">
+            <h1 class="select_tip">Select Tip %</h1>
+            <div class="box-2-2">
+                <button class="tip_amount">5%</button>
+                <button class="tip_amount">10%</button>
+                <button class="tip_amount">15%</button>
+                <button class="tip_amount">25%</button>
+                <button class="tip_amount">50%</button>
+                <input id="custom" dir="rtl" placeholder="Custom" minlength="0" maxlength="2"/>
+            </div>
+        </div>
+        <div class="box-3">
+            <h1 class="number_of_people">Number of People</h1>
+            <h1 id="error_msg" class="error" dir="rtl">Can`t be zero</h1>
+            <div class="box-3-2">
+                <img class="person-img" src="assets/images/icon-person.svg" alt="person">
+                <input id="people_amount" dir="rtl" placeholder="0"  minlength="0" maxlength="3"/>
+            </div>
+        </div>
+        <div class="box-4">
+            <div class="box-4-2">
+                <h1 class="tip">Tip Amount</h1>
+                <span class="person">/ person</span>
+                <div class="tip_input">
+                    <h1 id="tip_per_person" dir="rtl" class="tip_amount_per_person">$0.00</h1>
+                </div>
+            </div>
+            <div class="box-4-3">
+                <h1 class="total">Total</h1>
+                <span class="person">/ person</span>
+                <div class="tip_input">
+                    <h1 id="total_bill" dir="rtl" class="total_amount">$0.00</h1>
+                </div>
+            </div>
+            <div class="reset">
+                <button id="reset_button" class="reset_button">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="functions.js"></script>
+</body>
+</html>
